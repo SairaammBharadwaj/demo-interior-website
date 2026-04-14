@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { heroImages } from "@/data/site";
 
@@ -92,6 +93,27 @@ export function HeroSlider() {
                 }`}
               />
             ))}
+          </div>
+        </div>
+
+        <div className="mt-8 flex flex-col gap-5 text-sm text-muted md:flex-row md:items-center md:justify-between">
+          <p className="max-w-md leading-7">
+            A curated studio practice focused on timeless interiors, refined materials, and calm
+            spatial storytelling.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/portfolio"
+              className="rounded-full border border-foreground bg-foreground px-6 py-2 text-[0.75rem] uppercase tracking-[0.24em] text-background transition-colors duration-300 hover:bg-accent hover:border-accent"
+            >
+              View Portfolio
+            </Link>
+            <Link
+              href="/contact"
+              className="rounded-full border border-border px-6 py-2 text-[0.75rem] uppercase tracking-[0.24em] text-foreground transition-colors duration-300 hover:border-accent hover:text-accent"
+            >
+              Start a Project
+            </Link>
           </div>
         </div>
       </div>

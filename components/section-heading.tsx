@@ -20,7 +20,10 @@ export function SectionHeading({
       transition={{ duration: 0.45, ease: "easeOut" }}
       className="mb-12 space-y-4"
     >
-      <p className="text-[0.72rem] uppercase tracking-[0.28em] text-accent">{eyebrow}</p>
+      <div className="flex items-center gap-4">
+        <span className="h-px w-10 bg-accent/60" />
+        <p className="text-[0.72rem] uppercase tracking-[0.28em] text-accent">{eyebrow}</p>
+      </div>
       <h1 className="max-w-3xl font-heading text-5xl font-light leading-[1.02] text-foreground md:text-7xl">
         {title}
       </h1>

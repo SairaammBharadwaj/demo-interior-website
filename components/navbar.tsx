@@ -34,8 +34,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 px-5 pb-5 pt-7 md:px-8 md:pb-7 md:pt-10">
       <div
-        className={`mx-auto flex w-full max-w-7xl items-center justify-between transition-all duration-300 ${
-          scrolled ? "bg-background/80 backdrop-blur-sm" : "bg-transparent"
+        className={`mx-auto flex w-full max-w-7xl items-center justify-between rounded-full border border-transparent px-4 py-2 transition-all duration-300 ${
+          scrolled ? "bg-background/85 shadow-soft backdrop-blur-sm border-border" : "bg-transparent"
         }`}
       >
         <Logo />
@@ -50,7 +50,7 @@ export function Navbar() {
                 <Link
                   href={item.href}
                   className={`px-5 py-3 transition-colors duration-300 ${
-                    active ? "text-foreground" : "text-muted hover:text-foreground"
+                    active ? "text-foreground" : "text-muted hover:text-accent"
                   }`}
                 >
                   {item.label}

@@ -53,7 +53,7 @@ export function PortfolioGrid() {
             transition={{ duration: 0.45, delay: index * 0.04 }}
             onClick={() => setActiveId(project.id)}
             // This class mix creates the editorial masonry rhythm while preserving large tap targets on mobile.
-            className={`group relative mb-6 block w-full overflow-hidden rounded-[24px] border border-border text-left ${project.height}`}
+            className={`group relative mb-6 block w-full overflow-hidden rounded-[24px] border border-border text-left transition-colors duration-500 hover:border-accent/60 ${project.height}`}
           >
             <Image
               src={project.cover}
@@ -78,13 +78,13 @@ export function PortfolioGrid() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setActiveId(null)}
-            className="fixed inset-0 z-[70] bg-black/60 px-5 py-6 backdrop-blur-sm md:px-8 md:py-10"
+            className="fixed inset-0 z-[70] bg-[#1b1713]/60 px-5 py-6 backdrop-blur-sm md:px-8 md:py-10"
           >
             <div
               className="mx-auto flex h-full max-w-6xl flex-col overflow-hidden rounded-[28px] bg-background"
               onClick={(event) => event.stopPropagation()}
             >
-              <div className="flex items-center justify-between border-b border-border px-5 py-4 md:px-8">
+              <div className="flex items-center justify-between border-b border-border bg-white/70 px-5 py-4 backdrop-blur-sm md:px-8">
                 <div>
                   <p className="text-[0.72rem] uppercase tracking-[0.24em] text-accent">
                     Project Details
@@ -97,7 +97,7 @@ export function PortfolioGrid() {
                   type="button"
                   onClick={() => setActiveId(null)}
                   aria-label="Close project"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-border"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-border transition-colors duration-300 hover:border-accent hover:text-accent"
                 >
                   <X size={18} strokeWidth={1.4} />
                 </button>

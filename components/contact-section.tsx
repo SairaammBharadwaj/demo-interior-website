@@ -168,19 +168,19 @@ export function ContactSection() {
           transition={{ duration: 0.45 }}
           className="space-y-6"
         >
-          <div className="group rounded-[24px] border border-border p-8 transition-colors duration-300 hover:border-accent">
+          <div className="group rounded-[24px] border border-border bg-white/60 p-8 transition-colors duration-300 hover:border-accent hover:bg-white/80">
             <MapPin size={18} strokeWidth={1.5} className="mb-4 text-accent" />
             <p className="text-sm uppercase tracking-[0.22em] text-muted">Address</p>
             <p className="mt-3 max-w-xs text-lg leading-8">27 Mercer Street, New York, NY 10013</p>
           </div>
-          <div className="group rounded-[24px] border border-border p-8 transition-colors duration-300 hover:border-accent">
+          <div className="group rounded-[24px] border border-border bg-white/60 p-8 transition-colors duration-300 hover:border-accent hover:bg-white/80">
             <Phone size={18} strokeWidth={1.5} className="mb-4 text-accent" />
             <p className="text-sm uppercase tracking-[0.22em] text-muted">Phone</p>
             <Link href="tel:+12125550188" className="mt-3 block text-lg">
               +1 (212) 555-0188
             </Link>
           </div>
-          <div className="group rounded-[24px] border border-border p-8 transition-colors duration-300 hover:border-accent">
+          <div className="group rounded-[24px] border border-border bg-white/60 p-8 transition-colors duration-300 hover:border-accent hover:bg-white/80">
             <Mail size={18} strokeWidth={1.5} className="mb-4 text-accent" />
             <p className="text-sm uppercase tracking-[0.22em] text-muted">Email</p>
             <Link href="mailto:hello@demostudio.com" className="mt-3 block text-lg">
@@ -194,7 +194,7 @@ export function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.45, delay: 0.08 }}
-          className="overflow-hidden rounded-[28px] border border-border"
+          className="overflow-hidden rounded-[28px] border border-border bg-white/60"
         >
           {/* Placeholder map embed so the layout is ready before a final Google Maps configuration is chosen. */}
           <iframe
@@ -212,7 +212,7 @@ export function ContactSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.45, delay: 0.12 }}
-        className="mt-16 grid gap-8 rounded-[28px] border border-border px-6 py-10 md:px-10"
+        className="mt-16 grid gap-8 rounded-[28px] border border-border bg-white/55 px-6 py-10 backdrop-blur-sm md:px-10"
       >
         {/* Underline-only inputs keep the form visually light and aligned with the editorial design direction. */}
         <div className="grid gap-8 md:grid-cols-2">

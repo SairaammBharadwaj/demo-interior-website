@@ -30,7 +30,7 @@ const config: Config = {
       backgroundImage: {
         // A restrained texture prevents the light gray background from feeling flat.
         grain:
-          "radial-gradient(circle at top left, rgba(168, 139, 106, 0.1), transparent 35%), radial-gradient(circle at bottom right, rgba(44, 44, 44, 0.04), transparent 30%)"
+          "linear-gradient(180deg, rgba(155, 106, 79, 0.08), rgba(242, 238, 232, 0) 45%), radial-gradient(circle at top left, rgba(155, 106, 79, 0.12), transparent 40%), radial-gradient(circle at bottom right, rgba(42, 38, 34, 0.05), transparent 35%)"
       }
     }
   },

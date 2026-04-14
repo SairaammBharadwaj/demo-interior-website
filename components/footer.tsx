@@ -12,7 +12,7 @@ const socialLinks = [
 // The footer intentionally contrasts with the light pages to give the experience a graceful endpoint.
 export function Footer() {
   return (
-    <footer className="mt-24 bg-footer px-5 py-14 text-white md:px-8 md:py-20">
+    <footer className="mt-24 border-t border-white/10 bg-footer bg-[linear-gradient(160deg,#1c1814,#14110f)] px-5 py-14 text-white md:px-8 md:py-20">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.4fr_1fr_1fr] md:gap-8">
         <div className="space-y-5">
           <Logo dark />
@@ -51,7 +51,7 @@ export function Footer() {
             ))}
           </div>
           <p className="text-xs uppercase tracking-[0.22em] text-white/45">
-            Copyright © 2026 Demo. All rights reserved.
+            Copyright (c) 2026 Demo. All rights reserved.
           </p>
         </div>
       </div>

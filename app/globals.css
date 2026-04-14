@@ -10,7 +10,7 @@
   --color-accent: #9b6a4f;
   --color-panel: rgba(255, 255, 255, 0.78);
   --color-border: rgba(42, 38, 34, 0.12);
-  --color-footer: #1f1b18;
+  --color-footer: #1c1814;
 }
 
 * {
@@ -37,5 +37,5 @@ a {
 }
 
 ::selection {
-  background: rgba(168, 139, 106, 0.2);
+  background: rgba(155, 106, 79, 0.25);
 }
