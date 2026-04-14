@@ -12,7 +12,7 @@ const socialLinks = [
 // The footer intentionally contrasts with the light pages to give the experience a graceful endpoint.
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-white/10 bg-footer bg-[linear-gradient(160deg,#1c1814,#14110f)] px-5 py-14 text-white md:px-8 md:py-20">
+    <footer className="mt-24 border-t border-white/10 bg-footer bg-[linear-gradient(160deg,#1b1713,#14110f)] px-5 py-14 text-white md:px-8 md:py-20">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.4fr_1fr_1fr] md:gap-8">
         <div className="space-y-5">
           <Logo dark />
@@ -44,7 +44,7 @@ export function Footer() {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="flex h-10 w-10 items-center justify-center border border-white/15 text-white/75 transition-colors duration-300 hover:text-white"
+                className="flex h-10 w-10 items-center justify-center border border-white/15 text-white/75 transition-colors duration-300 hover:border-accent/60 hover:text-accent"
               >
                 <Icon size={15} strokeWidth={1.5} />
               </Link>

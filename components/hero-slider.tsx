@@ -37,6 +37,7 @@ export function HeroSlider() {
     >
       {/* Responsive design: the slider narrows on desktop to create luxury-style negative space. */}
       <div className="relative w-full md:w-[75%]">
+        <div className="pointer-events-none absolute -inset-6 -z-10 rounded-[32px] bg-[radial-gradient(600px_circle_at_50%_20%,rgba(176,117,82,0.18),transparent_70%)] md:-inset-8" />
         <div className="relative aspect-[4/5] overflow-hidden rounded-[24px] border border-border shadow-soft md:aspect-[16/10]">
           <AnimatePresence mode="wait">
             <motion.div
@@ -66,7 +67,7 @@ export function HeroSlider() {
             <button
               type="button"
               onClick={() => goTo(index - 1)}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground transition-colors duration-300 hover:border-accent hover:text-accent"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground transition-colors duration-300 hover:border-accent hover:bg-accent/10 hover:text-accent"
               aria-label="Previous slide"
             >
               <ArrowLeft size={18} strokeWidth={1.4} />
@@ -74,7 +75,7 @@ export function HeroSlider() {
             <button
               type="button"
               onClick={() => goTo(index + 1)}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground transition-colors duration-300 hover:border-accent hover:text-accent"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground transition-colors duration-300 hover:border-accent hover:bg-accent/10 hover:text-accent"
               aria-label="Next slide"
             >
               <ArrowRight size={18} strokeWidth={1.4} />

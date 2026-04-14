@@ -4,13 +4,13 @@
 
 :root {
   /* Shared design tokens make the palette easy to tune without touching component markup. */
-  --color-background: #f2eee8;
-  --color-foreground: #2a2622;
-  --color-muted: #7a7066;
-  --color-accent: #9b6a4f;
-  --color-panel: rgba(255, 255, 255, 0.78);
-  --color-border: rgba(42, 38, 34, 0.12);
-  --color-footer: #1c1814;
+  --color-background: #f3eee7;
+  --color-foreground: #27231f;
+  --color-muted: #7b6f66;
+  --color-accent: #b07552;
+  --color-panel: rgba(255, 255, 255, 0.82);
+  --color-border: rgba(39, 35, 31, 0.12);
+  --color-footer: #1b1713;
 }
 
 * {
@@ -23,7 +23,14 @@ html {
 
 body {
   margin: 0;
-  background: var(--color-background);
+  background-color: var(--color-background);
+  background-image:
+    linear-gradient(180deg, rgba(176, 117, 82, 0.14), rgba(243, 238, 231, 0) 60%),
+    radial-gradient(1600px circle at 50% -18%, rgba(176, 117, 82, 0.12), transparent 60%),
+    radial-gradient(1900px circle at 50% 12%, rgba(39, 35, 31, 0.045), transparent 70%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--color-foreground);
   /* Poppins Light gives body copy a clean fashion-editorial feel without becoming too delicate. */
   font-family: var(--font-body), sans-serif;
@@ -37,5 +44,5 @@ a {
 }
 
 ::selection {
-  background: rgba(155, 106, 79, 0.25);
+  background: rgba(176, 117, 82, 0.28);
 }

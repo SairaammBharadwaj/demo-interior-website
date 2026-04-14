@@ -21,7 +21,7 @@ export function SectionHeading({
       className="mb-12 space-y-4"
     >
       <div className="flex items-center gap-4">
-        <span className="h-px w-10 bg-accent/60" />
+        <span className="h-[2px] w-12 bg-accent/70" />
         <p className="text-[0.72rem] uppercase tracking-[0.28em] text-accent">{eyebrow}</p>
       </div>
       <h1 className="max-w-3xl font-heading text-5xl font-light leading-[1.02] text-foreground md:text-7xl">

@@ -62,7 +62,8 @@ export function PortfolioGrid() {
               sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
               className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+            <div className="absolute inset-0 bg-[radial-gradient(600px_circle_at_50%_0%,rgba(176,117,82,0.35),transparent_70%)] opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
             <div className="absolute inset-x-0 bottom-0 translate-y-4 p-6 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
               <h3 className="font-heading text-3xl font-light text-white">{project.title}</h3>
             </div>
@@ -84,7 +85,7 @@ export function PortfolioGrid() {
               className="mx-auto flex h-full max-w-6xl flex-col overflow-hidden rounded-[28px] bg-background"
               onClick={(event) => event.stopPropagation()}
             >
-              <div className="flex items-center justify-between border-b border-border bg-white/70 px-5 py-4 backdrop-blur-sm md:px-8">
+              <div className="flex items-center justify-between border-b border-border bg-[linear-gradient(135deg,rgba(255,255,255,0.9),rgba(176,117,82,0.08))] px-5 py-4 backdrop-blur-sm md:px-8">
                 <div>
                   <p className="text-[0.72rem] uppercase tracking-[0.24em] text-accent">
                     Project Details
@@ -97,7 +98,7 @@ export function PortfolioGrid() {
                   type="button"
                   onClick={() => setActiveId(null)}
                   aria-label="Close project"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-border transition-colors duration-300 hover:border-accent hover:text-accent"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-border transition-colors duration-300 hover:border-accent hover:bg-accent/10 hover:text-accent"
                 >
                   <X size={18} strokeWidth={1.4} />
                 </button>

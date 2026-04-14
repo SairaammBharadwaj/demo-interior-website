@@ -35,7 +35,9 @@ export function Navbar() {
     <header className="sticky top-0 z-50 px-5 pb-5 pt-7 md:px-8 md:pb-7 md:pt-10">
       <div
         className={`mx-auto flex w-full max-w-7xl items-center justify-between rounded-full border border-transparent px-4 py-2 transition-all duration-300 ${
-          scrolled ? "bg-background/85 shadow-soft backdrop-blur-sm border-border" : "bg-transparent"
+          scrolled
+            ? "bg-[linear-gradient(135deg,rgba(255,255,255,0.9),rgba(176,117,82,0.08))] shadow-soft backdrop-blur-sm border-border"
+            : "bg-transparent"
         }`}
       >
         <Logo />
