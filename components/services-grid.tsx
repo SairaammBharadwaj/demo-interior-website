@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Building2, House, PencilRuler, Sofa } from "lucide-react";
+import { Building2, House, PencilRuler, Sofa } from "lucide-react";
 import { processSteps, services } from "@/data/site";
 
 const icons = {
@@ -39,27 +39,33 @@ export function ServicesGrid() {
       </div>
 
       <div className="rounded-[28px] border border-border px-6 py-10 md:px-10">
-        <div className="mb-8">
+        <div className="mb-10">
           <p className="text-[0.72rem] uppercase tracking-[0.24em] text-accent">Process</p>
           <h3 className="mt-3 font-heading text-4xl font-light md:text-5xl">A Calm, Clear Journey</h3>
+          <p className="mt-4 max-w-2xl text-sm leading-7 text-muted">
+            Each step is paced, collaborative, and designed to keep the work feeling deliberate.
+          </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-5">
+        <div className="grid gap-5 md:grid-cols-3 xl:grid-cols-5">
           {processSteps.map((step, index) => (
-            <div key={step} className="flex items-center gap-4 md:block">
-              <div className="flex items-center gap-4 md:mb-5">
-                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-border text-sm text-muted">
-                  {index + 1}
+            <motion.div
+              key={step.title}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+              className="rounded-[22px] border border-border bg-panel p-5 shadow-soft"
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-[0.65rem] uppercase tracking-[0.28em] text-accent">
+                  Step {index + 1}
                 </span>
-                {index < processSteps.length - 1 ? (
-                  <ArrowRight size={16} strokeWidth={1.4} className="hidden text-muted md:block" />
-                ) : null}
+                <span className="h-px w-8 bg-border" />
               </div>
-              <div>
-                <p className="font-heading text-2xl font-light">{step}</p>
-                <div className="mt-3 h-px w-full bg-border" />
-              </div>
-            </div>
+              <h4 className="mt-4 font-heading text-2xl font-light">{step.title}</h4>
+              <p className="mt-3 text-sm leading-6 text-muted">{step.description}</p>
+            </motion.div>
           ))}
         </div>
       </div>

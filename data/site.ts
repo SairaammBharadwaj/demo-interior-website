@@ -72,13 +72,28 @@ export const services = [
   }
 ];
 
-// Process steps are intentionally short to keep the services page feeling calm and uncluttered.
+// Process steps stay concise while giving enough detail to feel intentional and premium.
 export const processSteps = [
-  "Consultation",
-  "Concept",
-  "Planning",
-  "Execution",
-  "Final Reveal"
+  {
+    title: "Discovery",
+    description: "We align on goals, timeline, and the emotional tone each space should carry."
+  },
+  {
+    title: "Concept & Story",
+    description: "Material direction, lighting mood, and spatial flow are defined with clarity."
+  },
+  {
+    title: "Design Development",
+    description: "Plans, elevations, and finish palettes are refined into a cohesive system."
+  },
+  {
+    title: "Coordination",
+    description: "We handle sourcing, vendors, and site collaboration to keep delivery steady."
+  },
+  {
+    title: "Styling & Reveal",
+    description: "Final layers, art, and objects are placed for a complete, lived-in finish."
+  }
 ];
 
 // Testimonial placeholders are prepared for future use even though they are not surfaced yet.
