@@ -38,7 +38,7 @@ export function ServicesGrid() {
         })}
       </div>
 
-      <div className="rounded-[28px] border border-border px-6 py-10 md:px-10">
+      <div className="rounded-[28px] border border-border bg-[linear-gradient(135deg,rgba(255,255,255,0.9),rgba(168,139,106,0.08))] px-6 py-10 md:px-10">
         <div className="mb-10">
           <p className="text-[0.72rem] uppercase tracking-[0.24em] text-accent">Process</p>
           <h3 className="mt-3 font-heading text-4xl font-light md:text-5xl">A Calm, Clear Journey</h3>
@@ -55,15 +55,15 @@ export function ServicesGrid() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.45, delay: index * 0.05 }}
-              className="rounded-[22px] border border-border bg-panel p-5 shadow-soft"
+              className="rounded-[22px] border border-border bg-white/80 p-5 shadow-soft"
             >
               <div className="flex items-center justify-between">
-                <span className="text-[0.65rem] uppercase tracking-[0.28em] text-accent">
+                <span className="text-[0.65rem] uppercase tracking-[0.28em] text-foreground/70">
                   Step {index + 1}
                 </span>
-                <span className="h-px w-8 bg-border" />
+                <span className="h-px w-8 bg-accent/40" />
               </div>
-              <h4 className="mt-4 font-heading text-2xl font-light">{step.title}</h4>
+              <h4 className="mt-4 font-heading text-2xl font-light text-foreground">{step.title}</h4>
               <p className="mt-3 text-sm leading-6 text-muted">{step.description}</p>
             </motion.div>
           ))}
